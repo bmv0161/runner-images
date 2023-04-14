@@ -18,6 +18,7 @@ Describe "Bazel" {
         @{ ToolName = "bazelisk" }
     ) {
         "$ToolName --version"| Should -ReturnZeroExitCode
+        "$ToolName version"| Should -ReturnZeroExitCode
     }
 }
 
